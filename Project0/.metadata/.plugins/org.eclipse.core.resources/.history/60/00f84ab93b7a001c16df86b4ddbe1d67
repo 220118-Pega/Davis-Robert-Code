@@ -1,0 +1,15 @@
+package com.revature.expensereimbursements.bl;
+
+import com.revature.expensereimbursements.dl.InterfaceRepo;
+
+public class RefundBL {
+	
+	private InterfaceRepo repo;
+	public RefundBL(InterfaceRepo repo) {
+		
+		this.repo = repo;
+	}
+	
+	
+
+}

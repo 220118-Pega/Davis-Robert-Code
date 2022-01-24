@@ -1,0 +1,8 @@
+package com.revature.stacklite.datalayer;
+
+import com.revature.stacklite.models.Issues;
+
+public interface InterfaceRepo {
+
+	 void addIssue(Issues newIssue);
+}

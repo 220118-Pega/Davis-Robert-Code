@@ -1,0 +1,7 @@
+package com.revature.expensereimbursements.dl;
+
+import com.revature.expensereimbursements.bl.IRefundBL;
+
+public interface InterfaceRepo extends IRefundBL {
+
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.revature.expensereimbursements.ui.MainMenu"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.revature.expensereimbursements.models.Reimbursement"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.revature.expensereimbursements.bl.RefundBL"/>
+    <fullyQualifiedTypeName name="com.revature.expensereimbursements.dl.InterfaceRepo"/>
+    <fullyQualifiedTypeName name="com.revature.expensereimbursements.dl.InMemoryRepo"/>
+    <fullyQualifiedTypeName name="com.revature.expensereimbursements.dl.Status"/>
+    <fullyQualifiedTypeName name="com.revature.expensereimbursements.dl.Type"/>
+    <fullyQualifiedTypeName name="com.revature.expensereimbursements.models.Status"/>
+</qualifiedTypeNameHistroy>

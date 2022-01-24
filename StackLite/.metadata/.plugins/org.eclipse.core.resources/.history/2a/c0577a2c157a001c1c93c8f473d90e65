@@ -1,0 +1,14 @@
+package com.revature.stacklite;
+
+import com.revature.stacklite.models.Issues;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Issues testIssues = new Issues();
+
+       System.out.println(testIssues);
+	}
+
+}

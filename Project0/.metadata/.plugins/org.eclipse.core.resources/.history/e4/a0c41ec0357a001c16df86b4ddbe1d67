@@ -1,0 +1,18 @@
+package com.revature.expensereimbursements.bl;
+
+import com.revature.expensereimbursements.models.Reimbursement;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Reimbursement refund = new Reimbursement("purchase of ", 20.00, 1);
+		
+		System.out.println(refund);
+	}
+	
+	
+
+}

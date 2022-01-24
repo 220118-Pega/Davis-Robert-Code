@@ -1,0 +1,20 @@
+package com.revature.stacklite.businesslogic;
+
+import com.revature.stacklite.models.Issues;
+import com.revature.stacklite.models.datalayer;
+
+/**
+ * business logic issue class
+ * @author rjdav
+ *
+ */
+public class IssueBL {
+	
+	private InterfaceRepo repo;
+	public IssueBL(InterfaceRepo repo)
+
+	public void addIssue(Issues issue) {
+		this.repo = repo;
+		
+	}
+}

@@ -1,0 +1,37 @@
+package com.revature.expensereimbursements.models;
+
+public class Reimbursement {
+	
+	private double amount;
+	private int id;
+
+	public Reimbursement() {
+		this(20.00, 1);
+	}
+	public Reimbursement(double amount, int id) {
+		this.amount = amount;
+		this.id = id;
+	}
+
+
+	public double getAmount() {
+		return amount;
+	}
+
+
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
+
+
+	public int getId() {
+		return id;
+	}
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	
+}

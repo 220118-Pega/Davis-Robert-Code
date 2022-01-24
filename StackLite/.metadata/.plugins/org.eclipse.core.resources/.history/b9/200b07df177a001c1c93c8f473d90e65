@@ -1,0 +1,12 @@
+package com.revature.stacklite.datalayer;
+
+/**
+ * 
+ * Repository that connects to an in memory storage that is a static list of issues and solutions
+ * @author rjdav
+ *
+ */
+public class InMemoryRepo {
+	
+
+}

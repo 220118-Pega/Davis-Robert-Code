@@ -1,0 +1,6 @@
+package com.revature.expensereimbursements.dl;
+
+public enum Status {
+	PENDING,APPROVED,DECLINED;
+
+}

@@ -1,0 +1,43 @@
+package com.revature.expensereimbursements.dl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.revature.expensereimbursements.models.Reimbursement;
+
+public class InMemoryRepo implements InterfaceRepo {
+	
+	private static ArrayList<Reimbursement> listofRefunds;
+	private static int latestId;
+	
+	
+	
+	
+	public InMemoryRepo() {
+		
+		listOfRefunds = new ArrayList<Reimbursement>(){{
+			add(new Reimbursement("Code doesn't work, why??", "My code doesn't work I don't know why", 1, ));
+			add(new Reimbursement("Code works??", "My code works I don't know why", 2));
+		}};
+	}
+	
+	
+	
+	
+	@Override
+	public void addRefund(Reimbursement refund) {
+		// TODO Auto-generated method stub
+		refund.setId(latestId);
+		listofRefunds.add(refund);
+		latestId++;
+		
+	}
+	@Override
+	public List<Reimbursement> getRefunds() {
+		// TODO Auto-generated method stub
+		return listofRefunds;
+	}
+	
+	
+
+}

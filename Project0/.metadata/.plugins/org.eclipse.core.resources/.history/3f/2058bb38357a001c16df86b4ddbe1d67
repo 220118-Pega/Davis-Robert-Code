@@ -1,0 +1,41 @@
+package com.revature.expensereimbursements.ui;
+
+import java.util.Scanner;
+
+public class MainMenu {
+
+	private Scanner myscanner;
+	
+
+	// inject this dep via constructor
+	public MainMenu(Scanner myscanner) {
+		this.myscanner = myscanner;
+	
+	}
+
+	public void start() {
+		// method signature : access modifier*, non access modifier*, return type,
+		// methodName, (arguments), throws exceptions*
+		boolean keepGoing = true;
+		do {
+			System.out.println("Welcome to Reimbursements, what do you wanna do?");
+			System.out.println("[0] Get a Reimbursement");
+			
+			String userInput = myscanner.nextLine();
+			switch (userInput) {
+			
+			case "0": 
+				System.out.println("Fetching Reimbursemt");
+				System.out.println();
+				break;
+			}
+
+		} while (keepGoing);
+	}
+	
+	private void createRefund() {
+		System.out.println("Enter a title for your refund: ");
+		String
+	}
+	
+}

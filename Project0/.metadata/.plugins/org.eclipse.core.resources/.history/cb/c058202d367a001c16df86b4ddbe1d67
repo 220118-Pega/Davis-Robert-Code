@@ -1,0 +1,57 @@
+package com.revature.expensereimbursements.models;
+
+public class Reimbursement {
+	private String title;
+	
+	private double amount;
+	private int id;
+
+	public Reimbursement() {
+		this("title", 20.00, 1);
+	}
+	
+	public Reimbursement(String title, double amount) {
+		this.title = title;
+		this.amount = amount;
+	}
+	
+	public Reimbursement(String title, double amount, int id) {
+		this.title = title;
+		this.amount = amount;
+		this.id = id;
+	}
+	
+	public String getTitle() {
+		return title;
+	}
+
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+
+	public double getAmount() {
+		return amount;
+	}
+
+
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
+
+
+	public int getId() {
+		return id;
+	}
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+	@Override
+	public String toString() {
+		return "Reimbursement [amount=" + amount + ", id=" + id + "]";
+	
+}
+}

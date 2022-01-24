@@ -1,0 +1,5 @@
+package com.revature.stacklite.businesslogic;
+
+public interface InterfaceIssueBL {
+
+}

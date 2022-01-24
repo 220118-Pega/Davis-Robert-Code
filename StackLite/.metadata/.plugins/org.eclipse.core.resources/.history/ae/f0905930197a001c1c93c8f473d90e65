@@ -1,0 +1,20 @@
+package com.revature.stacklite.datalayer;
+
+import com.revature.stacklite.models.Issues;
+
+/**
+ * 
+ * Repository that connects to an in memory storage that is a static list of issues and solutions
+ * @author rjdav
+ *
+ */
+public class InMemoryRepo implements InterfaceRepo{
+
+	@Override
+	public void addIssue(Issues newIssue) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

@@ -1,0 +1,88 @@
+package com.revature.expensereimbursements.ui;
+
+import java.util.Scanner;
+
+import com.revature.expensereimbursements.bl.RefundBL;
+import com.revature.expensereimbursements.models.Reimbursement;
+
+public class MainMenu {
+
+	private Scanner myscanner;
+	
+	private RefundBL refundBL;
+
+	// inject this dep via constructor
+	public MainMenu(Scanner myscanner, RefundBL refundBL) {
+		this.myscanner = myscanner;
+		this.refundBL = refundBL;
+		
+		
+		
+	
+	}
+
+	public void start() {
+		// method signature : access modifier*, non access modifier*, return type,
+		// methodName, (arguments), throws exceptions*
+		boolean keepGoing = true;
+		
+		do {
+			System.out.println("Welcome to Reimbursements, what do you wanna do?");
+			System.out.println("[0] Create a Reimbursement");
+			System.out.println("[1] View all Reimbursements ");
+			System.out.println("[X] Exit ");
+			
+			
+			String userInput = myscanner.nextLine();
+			switch (userInput) {
+			
+			case "0": 
+				System.out.println("Fetching Reimbursemt...");
+				createRefund();
+				break;
+				
+			case "1": 
+				System.out.println("Retriving List...");
+				getRefunds();
+				break;
+				
+			case "X":
+				
+				System.out.println("Goodbye");
+				keepGoing = false;
+				
+				default:
+					System.out.println("sorry wrong input");
+					break;
+				
+			}
+
+		} while (keepGoing);
+	}
+	
+	
+	private void getRefunds() {
+		try {
+			for(Reimbursement refund: refundBL.getRefunds()) {
+				
+				System.out.println(refund);
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	
+	private void createRefund() {
+		System.out.println("Enter a title for your refund: ");
+		String title = myscanner.nextLine();
+		
+		myscanner.nextLine();
+		System.out.println("Enter refund amount: ");
+		double amount = myscanner.nextDouble();
+		Reimbursement refund = new Reimbursement(title, amount);
+		System.out.println(refund);
+
+	}
+	
+}

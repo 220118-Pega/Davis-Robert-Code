@@ -1,0 +1,15 @@
+package com.revature.stacklite.businesslogic;
+
+import com.revature.stacklite.models.Issues;
+
+/**
+ * business logic issue class
+ * @author rjdav
+ *
+ */
+public class IssueBL {
+
+	public void addIssue(Issues issue) {
+		
+	}
+}
