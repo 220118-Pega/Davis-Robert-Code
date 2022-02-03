@@ -1,0 +1,49 @@
+2022-02-01 15:10:36 ERROR cant get connection 
+2022-02-01 15:48:17 ERROR cant get connection 
+2022-02-01 16:17:12 ERROR Something went wrong 
+org.postgresql.util.PSQLException: The column name time was not found in this ResultSet.
+	at org.postgresql.jdbc.PgResultSet.findColumn(PgResultSet.java:2865) ~[postgresql-42.3.1.jar:42.3.1]
+	at org.postgresql.jdbc.PgResultSet.getTimestamp(PgResultSet.java:2783) ~[postgresql-42.3.1.jar:42.3.1]
+	at com.revature.expensereimbursements.dl.RefundDAO.findAll(RefundDAO.java:71) [classes/:?]
+	at com.revature.expensereimbursements.dl.DBRepo.findAll(DBRepo.java:31) [classes/:?]
+	at com.revature.expensereimbursements.bl.RefundBL.getRefunds(RefundBL.java:29) [classes/:?]
+	at com.revature.expensereimbursements.ui.MainMenu.getRefunds(MainMenu.java:118) [classes/:?]
+	at com.revature.expensereimbursements.ui.MainMenu.start(MainMenu.java:57) [classes/:?]
+	at com.revature.expensereimbursements.Driver.main(Driver.java:27) [classes/:?]
+2022-02-01 16:18:04 ERROR Something went wrong 
+org.postgresql.util.PSQLException: The column name time was not found in this ResultSet.
+	at org.postgresql.jdbc.PgResultSet.findColumn(PgResultSet.java:2865) ~[postgresql-42.3.1.jar:42.3.1]
+	at org.postgresql.jdbc.PgResultSet.getTimestamp(PgResultSet.java:2783) ~[postgresql-42.3.1.jar:42.3.1]
+	at com.revature.expensereimbursements.dl.RefundDAO.findAll(RefundDAO.java:71) [classes/:?]
+	at com.revature.expensereimbursements.dl.DBRepo.findAll(DBRepo.java:31) [classes/:?]
+	at com.revature.expensereimbursements.bl.RefundBL.getRefunds(RefundBL.java:29) [classes/:?]
+	at com.revature.expensereimbursements.ui.MainMenu.getRefunds(MainMenu.java:118) [classes/:?]
+	at com.revature.expensereimbursements.ui.MainMenu.start(MainMenu.java:57) [classes/:?]
+	at com.revature.expensereimbursements.Driver.main(Driver.java:27) [classes/:?]
+2022-02-01 18:02:58 ERROR Error with connecting to DB 
+2022-02-01 18:41:21 ERROR Error with connecting to DB 
+2022-02-01 21:59:23 ERROR Issue not found 
+2022-02-01 22:00:18 ERROR Issue not found 
+2022-02-01 22:01:05 ERROR Error with connecting to DB 
+2022-02-01 22:01:05 ERROR Issue not found 
+2022-02-01 22:49:59 ERROR Invalid user input 
+2022-02-01 22:54:21 ERROR Error with connecting to DB 
+2022-02-02 00:33:07 ERROR Invalid user input 
+2022-02-02 00:36:24 ERROR Invalid user input 
+2022-02-02 00:37:34 ERROR Invalid user input 
+2022-02-02 00:40:42 ERROR Invalid user input 
+2022-02-02 00:42:24 ERROR Invalid user input 
+2022-02-02 00:43:01 ERROR Invalid user input 
+2022-02-02 00:45:14 ERROR Invalid user input 
+2022-02-02 00:46:58 ERROR Invalid user input 
+2022-02-02 00:47:52 ERROR Invalid user input 
+2022-02-02 00:48:35 ERROR Invalid user input 
+2022-02-02 00:58:28 ERROR Invalid user input 
+2022-02-02 00:59:34 ERROR Invalid user input 
+2022-02-02 09:54:15 ERROR Invalid user input 
+2022-02-02 09:54:33 ERROR Invalid user input 
+2022-02-02 09:54:44 ERROR Invalid user input 
+2022-02-02 09:57:52 ERROR Invalid user input 
+2022-02-02 14:42:02 ERROR Invalid user input 
+2022-02-02 14:42:29 ERROR Invalid user input 
+2022-02-02 14:43:08 ERROR Invalid user input 
